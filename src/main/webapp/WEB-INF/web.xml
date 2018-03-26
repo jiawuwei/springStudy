@@ -4,4 +4,13 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <!--spring监听器-->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <!--<param-value>/WEB-INF/spring-*.xml</param-value>-->
+    <param-value>classpath:spring-*.xml</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
 </web-app>
